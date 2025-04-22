@@ -3,24 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efe Bastug</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <title>Efe Bastug - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Link to a font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Optional: Link for icons (like for contact/social media) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body style="background-color: cornsilk; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-    <div style="text-align: center; width: 500px; word-wrap: break-word;">
-    <h1>Hello, I am Efe Baştuğ.</h1>
-    <p style="margin: 35px;">Hi, I am Efe Baştuğ. I am a 3rd year CENG student at Ankara Yildirim Beyazit 
-        University (AYBÜ). I am interested in software development (surprising, 
-        I know), writing short stories, mind games, video games, board games, card games
-        (you could say any kind of game) and reading books. I have joined some writing
-        competitions in the past, winning awards at some of them. <br><br>Either way, about my
-        CENG career, I interned in two places: First, <strong>Türkiye Intelligence Foundation</strong>, 
-        which taught me a lot about GUI implementation in Java, mind games and algorithms
-        in general, and second, in <strong>Hacettepe University</strong>, which was about web development.
-        Currently, I am a candidate engineer (I guess it is an accurate translation) at
-    <strong>ROKETSAN</strong>, doing systems engineering.
-    </p>
-    </div>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="site-title">Efe Baştuğ</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h1>Hello, I am Efe Baştuğ.</h1>
+            <div class="about-content">
+                <!-- Placeholder for profile image -->
+                <img src="../images/profile.png" alt="Efe Baştuğ Profile Picture" class="profile-img">
+
+                <p>Hi, I am Efe Baştuğ. I am a 3rd year CENG student at Ankara Yildirim Beyazit
+                    University (AYBÜ). I am interested in software development (surprising,
+                    I know), writing short stories, mind games, video games, board games, card games
+                    (you could say any kind of game) and reading books. I have joined some writing
+                    competitions in the past, winning awards at some of them.</p>
+
+                <p>Either way, about my CENG career, I interned in two places: First, <strong>Türkiye Intelligence Foundation</strong>,
+                    which taught me a lot about GUI implementation in Java, mind games and algorithms
+                    in general, and second, in <strong>Hacettepe University</strong>, which was about web development.
+                    Currently, I am a candidate engineer (I guess it is an accurate translation) at
+                <strong>ROKETSAN</strong>, doing systems engineering.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Project items will go here -->
+                <div class="project-item">
+                    <img src="../images/project1.png" alt="Project 1 Image">
+                    <h3>Renkli Daireler</h3>
+                    <p>A simple mind game developed for the Turkiye Intelligence Foundation.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- Add more project-item divs for each project -->
+                <div class="project-item">
+                    <img src="../images/project2.png" alt="Project 2 Image">
+                    <h3>Battleship</h3>
+                    <p>A battleship game played between two processes</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                 <div class="project-item">
+                    <img src="../images/project3.png" alt="Project 3 Image">
+                    <h3>Automatic Chord Detection Tool</h3>
+                    <p>A Python tool that automatically detects chords in a song</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="container">
+            <h2>My Most Notable Achievements</h2>
+            <div class="project-grid">
+                <!-- Project items will go here -->
+                <div class="project-item">
+                    <img src="../images/achievements1.png" alt="Project 1 Image">
+                    <h3>Hollow Knight All Achievements</h3>
+                    <p>Got all achievements in Hollow Knight and platinumed the game</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- Add more project-item divs for each project -->
+                <div class="project-item">
+                    <img src="../images/achievements2.jpeg" alt="Project 2 Image">
+                    <h3>UDHAM Idea Competition</h3>
+                    <p>Our smart ecologicaldestination planning application ROTASYON earned 4th place</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                 <div class="project-item">
+                    <img src="../images/achievements3.jpeg" alt="Project 3 Image">
+                    <h3>Bloodborne DLC</h3>
+                    <p>Finished Bloodborne and DLC, ending the nightmare befalling Yharnam</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="project-item">
+                    <img src="../images/achievements4.png" alt="Project 4 Image">
+                    <h3>FIFA Win</h3>
+                    <p>Won against Abdullah Enes Güzlek, a solid FIFA player, as Liverpool vs Bayern Munich</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="project-item">
+                    <img src="../images/achievements5.jpg" alt="Project 5 Image">
+                    <h3>Blox Fruits PVP Master</h3>
+                    <p>Mastered the Magma Fruit and won 100 pvp matches with it</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="project-item">
+                    <img src="../images/achievements6.jpg" alt="Project 6 Image">
+                    <h3>Fizz Penta</h3>
+                    <p>Fizz Penta</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+             <h2>Skills</h2>
+             <ul class="skills-list">
+                 <li>Programming Languages: Java, Python, C, C++, JavaScript</li>
+                 <li>Web Technologies: HTML, CSS, React</li>
+                 <li>Tools & Technologies: Git, PostgreSQL, Enterprise Architect, JIRA</li>
+                 <li>Other: Writing short stories, developing Roblox games</li>
+             </ul>
+        </section>
+
+         <section id="contact" class="container">
+             <h2>Get In Touch</h2>
+             <p>Feel free to reach out to me!</p>
+             <div class="social-links">
+                 <a href="https://github.com/EfeBastug" class="social-icon" target="_blank"><i class="fab fa-github"></i></a> <!-- GitHub Icon -->
+                 <a href="https://www.linkedin.com/in/efe-ba%C5%9Ftu%C4%9F-503954254/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a> <!-- LinkedIn Icon -->
+                 <a href="mailto:bastugefe@hotmail.com" class="social-icon"><i class="fas fa-envelope"></i></a> <!-- Email Icon -->
+             </div>
+         </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Efe Baştuğ. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
