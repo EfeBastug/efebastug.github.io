@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Become a Member - AYBU Board Game Club</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header section containing logo and navigation -->
@@ -25,7 +34,7 @@
     <!-- Main content section -->
     <main>
         <!-- Membership hero section -->
-        <section id="membership-hero" class="section">
+        <section id="membership-hero" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Join AYBU Board Game Club</h2>
                 <p>Fill out the form below to become a member and join our WhatsApp group.</p>
@@ -33,7 +42,7 @@
         </section>
 
         <!-- Membership benefits section -->
-        <section id="benefits" class="section">
+        <section id="benefits" class="section" data-aos="fade-right">
             <div class="container">
                 <h2>Membership Benefits</h2>
                 <div class="benefits-grid">
@@ -57,7 +66,7 @@
         </section>
 
         <!-- Registration form section -->
-        <section id="registration-form" class="section">
+        <section id="registration-form" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Membership Registration Form</h2>
                 <form class="form-container">
@@ -69,6 +78,11 @@
                     <div class="form-group">
                         <label for="email">AYBU Email</label>
                         <input type="email" id="email" name="email" placeholder="your.name@aybu.edu.tr" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthday">Birth Date</label>
+                        <input type="text" id="birthday" name="birthday" required>
                     </div>
                     
                     <div class="form-group">
@@ -137,5 +151,6 @@
             </div>
         </div>
     </footer>
+    <button id="scrollTopBtn" title="Go to top">⬆️</button>
 </body>
 </html>
