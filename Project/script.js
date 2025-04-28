@@ -68,6 +68,27 @@ $(document).ready(function() {
                 error.insertAfter(element);
             }
         },
+    
+        // 🛠 ADD THESE BELOW:
+        highlight: function(element) {
+            $(element).addClass('input-error');
+        },
+        unhighlight: function(element) {
+            $(element).removeClass('input-error');
+        },
+        invalidHandler: function(event, validator) {
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+                // 1️⃣ Shake the form
+                $(".form-container").effect("shake", { distance: 10 });
+    
+                // 2️⃣ Scroll to first invalid field
+                $('html, body').animate({
+                    scrollTop: $(validator.errorList[0].element).offset().top - 100
+                }, 600);
+            }
+        },
+    
         submitHandler: function(form) {
             Swal.fire({
                 icon: 'success',
@@ -80,6 +101,7 @@ $(document).ready(function() {
             return false;
         }
     });
+    
 
 });
 

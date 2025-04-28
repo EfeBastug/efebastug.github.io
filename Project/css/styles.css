@@ -506,3 +506,18 @@ Responsive Styles
 #scrollTopBtn:hover {
    background-color: #555;
 }
+
+.error-message {
+   color: red;
+   font-size: 0.9em;
+   margin-top: 5px;
+}
+
+.input-error {
+   border: 2px solid red;
+   background-color: #ffe6e6; /* Optional light red background */
+}
+
+.valid-message {
+   border: 2px solid green;
+}
