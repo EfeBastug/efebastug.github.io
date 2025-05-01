@@ -69,7 +69,6 @@ $(document).ready(function() {
             }
         },
     
-        // 🛠 ADD THESE BELOW:
         highlight: function(element) {
             $(element).addClass('input-error');
         },
@@ -175,4 +174,39 @@ $(document).ready(function() {
         heightStyle: "content",
         animate: 200
     });
+});
+
+//Tooltip for Game Section
+$(document).ready(function() {
+    $(document).tooltip({
+        trigger: 'hover',
+        placement: 'top'
+    });
+});
+
+//Chekbox for Interests
+$(document).ready(function() {
+    $(".checkbox-group input[type='checkbox']").checkboxradio();
+});
+
+$(document).ready(function() {
+    $("#faq-accordion").accordion({
+    });
+});
+
+$(document).ready(function() {
+    // Initialize Age Slider
+    $("#age-slider").slider({
+        range: "min",
+        value: 18,
+        min: 14,
+        max: 65,
+        slide: function(event, ui) {
+            $("#age-value").text(ui.value);
+            $("#age").val(ui.value);
+        }
+    });
+    // Set initial value
+    $("#age").val($("#age-slider").slider("value"));
+    $("#age-value").text($("#age-slider").slider("value"));
 });

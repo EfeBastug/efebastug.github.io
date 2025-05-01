@@ -80,27 +80,29 @@
                 <form class="form-container">
                     <div class="form-group">
                         <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" required>
+                        <input type="text" id="fullName" name="fullName" required title="Please enter your full name">
                     </div>
                     
                     <div class="form-group">
                         <label for="email">AYBU Email</label>
-                        <input type="email" id="email" name="email" placeholder="your.name@aybu.edu.tr" required>
+                        <input type="email" id="email" name="email" placeholder="your.name@aybu.edu.tr" required title="Please enter a valid AYBU email address">
                     </div>
 
                     <div class="form-group">
-                        <label for="birthday">Birth Date</label>
-                        <input type="text" id="birthday" name="birthday" required>
+                        <label for="age">Your Age: <span id="age-value">18</span></label>
+                        <div id="age-slider"></div>
+                        <input type="hidden" id="age" name="age" value="18" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="whatsapp">WhatsApp Number</label>
-                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+90 5XX XXX XX XX" required>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+90 5XX XXX XX XX" required title="Please enter a valid WhatsApp number">
                     </div>
                     
                     <div class="form-group">
-                        <label>Board Game Interests (Select all that apply)</label>
-                        <div class="checkbox-group">
+                        <fieldset class="checkbox-group">
+                            <legend>Board Game Interests (Select all that apply)</legend>
+                    
                             <div class="checkbox-item">
                                 <input type="checkbox" id="strategy" name="interests" value="strategy">
                                 <label for="strategy">Strategy Games</label>
@@ -121,8 +123,9 @@
                                 <input type="checkbox" id="roleplay" name="interests" value="roleplay">
                                 <label for="roleplay">Role-Playing Games</label>
                             </div>
-                        </div>
+                        </fieldset>
                     </div>
+                    
                     
                     <div class="form-group">
                         <label for="message">Why do you want to join? (Optional)</label>
